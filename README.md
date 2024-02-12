@@ -42,18 +42,23 @@ We're interested in how you break down the work and build your solution in a cle
         - `/export/investments` generates csv for all investments
 
 - How to run any additional scripts or tests you may have added
+    - Run npm i in the admin folder to install Axios Dependancy
 - Relating to the task please add answers to the following questions;
     1. How might you make this service more secure?
         - Rather than responding with the CSV, generating a link to download an encrypted CSV.
         - Removing confidential personal data ie. name from the csv.
+        - Utilize Whitelisted IP addresses.
+        - It is mention in notes that there are sufficient security middleware, permissions access and PII safe protocols. But ensuring confidential data is note stored in logs.
     2. How would you make this solution scale to millions of records?
         - Paramaters in the API call ie. Created after x date, Holdings, Value etc.
         - Pagenation in the API endpoint.
         - Rather than responding with the CSV, generating a link to download an encrypted CSV once ready.
+        - Utilizing Scalable Cloud Service Providers
     3. What else would you have liked to improve given more time?
         - Implementing generation of CSV based on userID.
         - Tidy up code, moving functions into their own functions repo to be used accross services.
         - Generation of CSV for holdings under specified companies.
+        - Improve error handling and catching.
 
 
 On completion email a link to your repository to your contact at Moneyhub and ensure it is publicly accessible.
